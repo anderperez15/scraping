@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        th {
+            background-color: black;
+        }
+        th, td {
+            padding: 5px;
+            text-align: center;
+            color: white;
+            cursor: pointer;
+            font-size: .7rem;
+        }
+        tr{
+            background-color: #1f1f1f;
+        }
+        tr:nth-child(even) {background-color: black;}
+    </style>
+</head>
+<body>
+    <table class="table  table-striped">
+        <thead class="thead-dark">
+            <tr id="titulos">
+            </tr>
+        </thead>
+        <tbody id="body">
+        </tbody>
+    </table>
+</body>
+<script src="./script.js"></script>
+<script>
+    let lista = [
+        {name:'Sbs',id:'sbs'},
+        {name:'D. house',id:'dollarhouse'},
+        {name:'W. U.',id:'westernunion'},
+        {name:'C. Seguro',id:'cambioseguro'},
+        {name:'Cambiafx',id:'cambiafx'},
+        {name:'Rextie',id:'rextie'},
+        {name:'C. Inka',id:'cambistainka'},
+        {name:'Acomo',id:'acomo'},
+        {name:'Cambix',id:'cambix'},
+        {name:'Tkambio',id:'tkambio'},
+        {name:'D. Sol',id:'dolarsol'}
+    ]
+    let head = document.getElementById('titulos');
+    let body = document.getElementById('body');
+    let numero =  document.createElement('TH');
+    numero.innerText = "Nro";
+    head.appendChild(numero);
+    lista.forEach(d => {
+        let th = document.createElement('TH');
+        th.setAttribute('colspan','2')
+        th.innerText = d.name;
+        head.appendChild(th);
+    })
+    let t =  document.createElement('TR');
+    t.appendChild(document.createElement('TD'))
+    lista.forEach(d => {
+        let one = document.createElement('TD');
+        let two = document.createElement('TD');
+        one.innerText = 'Compra';
+        two.innerText = 'Venta';
+        t.appendChild(one);
+        t.appendChild(two);
+    })
+    body.appendChild(t);
+    window.data.forEach((d,i) => {
+        let tr = document.createElement('TR');
+        let n = document.createElement('TD');
+        n.innerText = i+1;
+        tr.appendChild(n);
+        lista.forEach(l => {
+            let compra = document.createElement('TD');
+            let venta = document.createElement('TD');
+            let elm = d.filter(s => s.name === l.id);
+            if(elm.length){
+                let c = elm[0];
+                compra.innerText = c.compra?c.compra:'Nulo';
+                venta.innerText = c.venta?c.venta:'Nulo';
+            } else {
+                compra.innerText = 'Nulo';
+                venta.innerText = 'Nulo';
+            }
+            tr.appendChild(compra);
+            tr.appendChild(venta);
+        })
+        body.appendChild(tr);
+    })
+
+</script>
+</html>
