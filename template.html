@@ -9,6 +9,9 @@
             margin: 0;
             padding: 0;
         }
+        .container{
+            display: flex;
+        }
         table{
             border-collapse: collapse;
         }
@@ -32,39 +35,94 @@
     </style>
 </head>
 <body>
-    <table class="table  table-striped">
-        <thead class="thead-dark">
-            <tr id="titulos">
-                <th>Nro</th>
-                {% for l in lista %}
-                    <th colspan="2">{{l["name"]}}</th>
-                {% endfor %}
-            </tr>
-        </thead>
-        <tbody id="body">
-            <tr>
-                <td></td>
-                {% for l in lista %}
-                    <td>Compra</td>
-                    <td>Venta</td>
-                {% endfor %}
-            </tr>
-            {% for i in range(0,data | length) %}
-                <tr>
-                    <td>{{i + 1}}</td>
+    <div class="container">
+        <table class="table  table-striped">
+            <thead class="thead-dark">
+                <tr id="titulos">
+                    <th>Nro</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
                     {% for l in lista %}
-                        {% if l["name"] in data[i] %}
-                            <td>{{data[i][l["name"]]["compra"]}}</td>
-                            <td>{{data[i][l["name"]]["venta"]}}</td>
-                        {% else %}
-                            <td>Nulo</td>
-                            <td>Nulo</td>
-                        {% endif %}
+                        <th colspan="2">{{l["name"]}}</th>
                     {% endfor %}
                 </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+            </thead>
+            <tbody id="body">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    {% for l in lista %}
+                        <td>Compra</td>
+                        <td>Venta</td>
+                    {% endfor %}
+                </tr>
+                {% for i in range(0,data | length) %}
+                    <tr>
+                        <td>{{i + 1}}</td>
+                        {% for d in data[i] %}
+                            {% if loop.index0 < 1 %}
+                                <td>{{ data[i][d]["time"]["dia"] }}</td>
+                                <td>{{ data[i][d]["time"]["hora"] }}</td>
+                            {% endif %}
+                        {% endfor %}
+                        {% for l in lista %}
+                            {% if l["name"] in data[i] %}
+                                <td>{{data[i][l["name"]]["compra"]}}</td>
+                                <td>{{data[i][l["name"]]["venta"]}}</td>
+                            {% else %}
+                                <td>Nulo</td>
+                                <td>Nulo</td>
+                            {% endif %}
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <table class="table  table-striped" style="margin-left: 30px;">
+            <thead class="thead-dark">
+                <tr id="titulos">
+                    <th>Nro</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    {% for l in lista2 %}
+                        <th colspan="2">{{l}}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody id="body">
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    {% for l in lista2 %}
+                        <td>Compra</td>
+                        <td>Venta</td>
+                    {% endfor %}
+                </tr>
+                {% for i in range(0,data2 | length) %}
+                    <tr>
+                        <td>{{i + 1}}</td>
+                        {% for d in data2[i] %}
+                            {% if loop.index0 < 1 %}
+                                <td>{{ data2[i][d]["time"]["dia"] }}</td>
+                                <td>{{ data2[i][d]["time"]["hora"] }}</td>
+                            {% endif %}
+                        {% endfor %}
+                        {% for l in lista2 %}
+                            {% if l in data2[i] %}
+                                <td>{{data2[i][l]["compra"]}}</td>
+                                <td>{{data2[i][l]["venta"]}}</td>
+                            {% else %}
+                                <td>Nulo</td>
+                                <td>Nulo</td>
+                            {% endif %}
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 </body>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </html>
