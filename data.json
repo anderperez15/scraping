@@ -1,1 +1,266 @@
-[]
+[
+    {
+        "D. house": {
+            "name": "D. house",
+            "compra": "3.4070",
+            "venta": "3.4350",
+            "time": {
+                "dia": "27/03/20",
+                "time": "20:58:44"
+            }
+        }
+    },
+    {
+        "D. house": {
+            "name": "D. house",
+            "compra": "3.4070",
+            "venta": "3.4350",
+            "time": {
+                "dia": "27/03/20",
+                "time": "20:59:09"
+            }
+        }
+    },
+    {
+        "D. house": {
+            "name": "D. house",
+            "compra": "3.4070",
+            "venta": "3.4350",
+            "time": {
+                "dia": "27/03/20",
+                "time": "21:02:33"
+            }
+        }
+    },
+    {
+        "D. house": {
+            "name": "D. house",
+            "compra": "3.4070",
+            "venta": "3.4350",
+            "time": {
+                "dia": "27/03/20",
+                "time": "21:03:00"
+            }
+        }
+    },
+    {
+        "D. house": {
+            "name": "D. house",
+            "compra": "3.4070",
+            "venta": "3.4350",
+            "time": {
+                "dia": "27/03/20",
+                "time": "21:03:36"
+            }
+        }
+    },
+    {
+        "D. house": {
+            "name": "D. house",
+            "compra": "3.4070",
+            "venta": "3.4350",
+            "time": {
+                "dia": "27/03/20",
+                "time": "21:04:09"
+            }
+        }
+    },
+    {
+        "D. house": {
+            "name": "D. house",
+            "compra": "3.4070",
+            "venta": "3.4350",
+            "time": {
+                "dia": "27/03/20",
+                "time": "21:04:33"
+            }
+        }
+    },
+    {
+        "D. house": {
+            "name": "D. house",
+            "compra": "3.4070",
+            "venta": "3.4350",
+            "time": {
+                "dia": "27/03/20",
+                "time": "21:04:52"
+            }
+        }
+    },
+    {
+        "D. house": {
+            "name": "D. house",
+            "compra": "3.4070",
+            "venta": "3.4350",
+            "time": {
+                "dia": "27/03/20",
+                "time": "21:05:24"
+            }
+        }
+    },
+    {
+        "D. house": {
+            "name": "D. house",
+            "compra": "3.4070",
+            "venta": "3.4350",
+            "time": {
+                "dia": "27/03/20",
+                "time": "21:06:20"
+            }
+        }
+    },
+    {
+        "D. house": {
+            "name": "D. house",
+            "compra": "3.4070",
+            "venta": "3.4350",
+            "time": {
+                "dia": "27/03/20",
+                "time": "21:10:07"
+            }
+        }
+    },
+    {
+        "D. house": {
+            "name": "D. house",
+            "compra": "3.4090",
+            "venta": "3.4350",
+            "time": {
+                "dia": "27/03/20",
+                "time": "21:24:50"
+            }
+        }
+    },
+    {
+        "D. house": {
+            "name": "D. house",
+            "compra": "3.4090",
+            "venta": "3.4350",
+            "time": {
+                "dia": "27/03/20",
+                "time": "21:28:16"
+            }
+        }
+    },
+    {
+        "D. house": {
+            "name": "D. house",
+            "compra": "3.4090",
+            "venta": "3.4350",
+            "time": {
+                "dia": "27/03/20",
+                "time": "21:31:43"
+            }
+        }
+    },
+    {
+        "D. house": {
+            "name": "D. house",
+            "compra": "3.4090",
+            "venta": "3.4350",
+            "time": {
+                "dia": "27/03/20",
+                "time": "21:32:28"
+            }
+        }
+    },
+    {
+        "D. house": {
+            "name": "D. house",
+            "compra": "3.4090",
+            "venta": "3.4350",
+            "time": {
+                "dia": "27/03/20",
+                "time": "21:33:24"
+            }
+        }
+    },
+    {
+        "D. house": {
+            "name": "D. house",
+            "compra": "3.4090",
+            "venta": "3.4350",
+            "time": {
+                "dia": "27/03/20",
+                "time": "21:34:36"
+            }
+        }
+    },
+    {
+        "Tkambio": {
+            "name": "Tkambio",
+            "compra": "3.401",
+            "venta": "3.438",
+            "time": {
+                "dia": "27/03/20",
+                "time": "21:39:28"
+            }
+        }
+    },
+    {
+        "Tkambio": {
+            "name": "Tkambio",
+            "compra": null,
+            "venta": null,
+            "time": {
+                "dia": "27/03/20",
+                "time": "21:40:06"
+            }
+        }
+    },
+    {
+        "Tkambio": {
+            "name": "Tkambio",
+            "compra": null,
+            "venta": null,
+            "time": {
+                "dia": "27/03/20",
+                "time": "21:41:03"
+            }
+        }
+    },
+    {
+        "Cambiafx": {
+            "name": "Cambiafx",
+            "compra": "3.4340",
+            "venta": "3.4040",
+            "time": {
+                "dia": "27/03/20",
+                "time": "22:05:19"
+            }
+        }
+    },
+    {
+        "Cambiafx": {
+            "name": "Cambiafx",
+            "compra": "3.4340",
+            "venta": "3.4040",
+            "time": {
+                "dia": "27/03/20",
+                "time": "22:06:44"
+            }
+        }
+    },
+    {
+        "Cambiafx": {
+            "name": "Cambiafx",
+            "compra": "3.4340",
+            "venta": "3.4040",
+            "time": {
+                "dia": "27/03/20",
+                "time": "22:08:24"
+            }
+        }
+    },
+    {
+        "Cambiafx": {
+            "name": "Cambiafx",
+            "compra": "3.4340",
+            "venta": "3.4040",
+            "time": {
+                "dia": "27/03/20",
+                "time": "22:09:49"
+            }
+        }
+    }
+]

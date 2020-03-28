@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        body{
+            background-color: black;
+        }
+        th {
+            background-color: black;
+        }
+        th, td {
+            padding: 5px;
+            text-align: center;
+            color: white;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        tr{
+            background-color: #1f1f1f;
+        }
+        tr:nth-child(even) {background-color: black;}
+    </style>
+</head>
+<body>
+    <table class="table  table-striped">
+        <thead class="thead-dark">
+            <tr id="titulos">
+                <th>Nro</th>
+                {% for l in lista %}
+                    <th colspan="2">{{l["name"]}}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody id="body">
+            <tr>
+                <td></td>
+                {% for l in lista %}
+                    <td>Compra</td>
+                    <td>Venta</td>
+                {% endfor %}
+            </tr>
+            {% for i in range(0,data | length) %}
+                <tr>
+                    <td>{{i + 1}}</td>
+                    {% for l in lista %}
+                        {% if l["name"] in data[i] %}
+                            <td>{{data[i][l["name"]]["compra"]}}</td>
+                            <td>{{data[i][l["name"]]["venta"]}}</td>
+                        {% else %}
+                            <td>Nulo</td>
+                            <td>Nulo</td>
+                        {% endif %}
+                    {% endfor %}
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</html>
